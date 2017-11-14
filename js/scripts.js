@@ -1,3 +1,4 @@
+/*back-end*/
 function numberArray(hard){
     var Numbers= [];
 
@@ -18,7 +19,32 @@ function numberArray(hard){
     };
     return Numbers;
 };
+/* back-end*/
+
 
 function clearForm(form) {
         $(':input').not(':button, :submit').val('');
     };
+
+/*Front-end*/
+$(document).ready(function(){
+$("form#pong").submit(function(event){
+event.preventDefault();
+
+$("ul").empty();
+
+var hard = parseInt($("#harder").val());
+
+var display= numberArray(hard);
+
+for (var index =0; index <= display.length; index++){
+
+
+$("ul#output").append("<li>"+display[index]+"</li>");
+     };
+     clearForm("#input");
+     });
+
+});
+
+/*Front-end*/

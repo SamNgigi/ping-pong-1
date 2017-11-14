@@ -1,36 +1,65 @@
 <!DOCTYPE html>
-      <html>
-        <head>
-          <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-          <link href="css/styles.css" rel="stylesheet" type="text/css">
-          <script src="js/jquery-3.2.1.js"></script>
-          <script src="js/scripts.js"></script>
-        </head>
-        <body>
-          <div class="container">
-            <h1>PING-PONG!</h1>
-            <h2>Let's play!</h2>
-            <h3>Rules:</h3>
-                <p>ping-pong will count up to your number from 1 with the following exceptions:</p>
-              <div class="jumbotron">
-                <ul>
-                  <li>1. Numbers divisible by 3 become "ping"</li>
-                  <li>2. Numbers divisible by 5 become "pong"</li>
-                  <li>3. Numbers divisible by 15 become "pingpong"</li>
-                </ul>
-              </div>
-              <div id="number">
-                <form>
-                  <div class="form-group">
-                    <label for="Enter your number here">Enter your number here</label>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 
-                    <input id="Enter your number here" class="form-control" type="number">
-                    <button type="submit" class="btn">pingpong</button>
-                  </div>
+    <title>Ping-Pong</title>
+  </head>
+  <body>
+<header>
+<div class="jumbotron">
+<h1 class="center">PING-PONG</h1>
+</div>
+</header>
+
+<div class="sidebar " style="width:10%">
+  <a href="index.html" class="w3"><div class="goli">HOME</div></a>
+  <a href="inst.html" class="w3"><div class="goli">INSTRUCTIONS</div></a>
+  <a href="about.html" class="w3"><div class="goli">ABOUT</div></a>
+</div>
+
+<img src="img/ping.jpg" class="img-responsive" alt="Responsive image">
+
+<div style="margin-left:25%">
+<div class="image">
+  <p class="italic">Ping Pong will count up to your number from number 1 </p>
+
+<div class="form-group">
+  <form class="form-inline" id="pong">
+<label for="me" class="hard">ENTER A NUMBER</label>
+  <input id="harder" class="form-control" type="number" >
+
+</div>
+
+<ul id="output"></ul>
+
+
+<button id="button">PLAY</button>
+
+<!--<button type="submit" class="btn" id="restart" class="hard">RESTART</button>
+<button type="submit" class="btn" id="restart" class="hard">QUIT</button>-->
 </form>
-                      <h3 class="author">About ping pong</h3>
-                      <p class="author">created by.</p>
-                      <p>Garvin Ipkiss.</p>
-                    </p>click here<a href="https://www.miniclip.com/games/ping-pong/en/">pingpong</a>
-                    </body>
-                  </html>
+</div>
+
+</div>
+<footer>
+<div class="well">
+<h3 class="goli">Share your scores</h3>
+<center><a href="https://web.facebook.com" class="fa fa-facebook"style="font-size:23px;color:blue"></a></center>
+<center><a href="https://web.twitter.com" class="fa fa-twitter"style="font-size:25px;color:blue"></a></center>
+<center><a href="https://snapchat.com" class="fa fa-snapchat"style="font-size:30px;color:yellow"></a></center>
+<center><a href="https://pinterest.com" class="fa fa-pinterest" style="font-size:35px;color:red"></a></center>
+
+</div>
+</footer>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/scripts.js"></script>
+  </body>
+</html>
